@@ -1,0 +1,5 @@
+{
+  "name": "ShieldNet VPN",
+  "description": "A modern, sleek web interface for a VPN application, demonstrating connection status, server selection, and a Gemini-powered Security Assistant for cybersecurity advice.",
+  "requestFramePermissions": []
+}

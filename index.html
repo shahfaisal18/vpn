@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShieldNet VPN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            keyframes: {
+              'glow-green': {
+                '0%, 100%': { boxShadow: '0 0 5px #10b981, 0 0 10px #10b981' },
+                '50%': { boxShadow: '0 0 20px #10b981, 0 0 30px #10b981' },
+              },
+               'glow-blue': {
+                '0%, 100%': { boxShadow: '0 0 5px #3b82f6, 0 0 10px #3b82f6' },
+                '50%': { boxShadow: '0 0 20px #3b82f6, 0 0 30px #3b82f6' },
+              },
+            },
+            animation: {
+              'glow-green': 'glow-green 2s ease-in-out infinite',
+              'glow-blue': 'glow-blue 2s ease-in-out infinite',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.22.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
